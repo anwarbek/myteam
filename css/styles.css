@@ -1,28 +1,28 @@
 @font-face {
-    font-family: "Livvic";
-    src: url("../fonts/Livvic-SemiBold.woff2") format("woff2"),
-        url("../fonts/Livvic-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-SemiBold.woff2") format("woff2"),
+  url("../fonts/Livvic-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Livvic";
-    src: url("../fonts/Livvic-Bold.woff2") format("woff2"),
-        url("../fonts/Livvic-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Bold.woff2") format("woff2"),
+  url("../fonts/Livvic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Livvic";
-    src: url("../fonts/Livvic-MediumItalic.woff2") format("woff2"),
-        url("../fonts/Livvic-MediumItalic.woff") format("woff");
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-MediumItalic.woff2") format("woff2"),
+  url("../fonts/Livvic-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* GLOBAL */
@@ -30,7 +30,7 @@
   --midnight-green: #014e56;
   --light-coral: #f67e7e;
   --white: #ffffff;
-  --rapture-blue: #79c8C7;
+  --rapture-blue: #79c8c7;
   --police-blue:  #2c6269;
   --deep-jungle-green: #004047;
   --sacramento-state-green: #012f34;
@@ -192,6 +192,7 @@ header {
   margin: 0;
   padding: 0 0 250px;
 }
+
 .hero-header {
   margin: 0;
   padding: 0;
@@ -200,14 +201,17 @@ header {
   font-weight: 700;
   font-style: normal;
 }
+
 .hero-header-span {
   color: var(--light-coral);
 }
+
 .hero-content {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
+
 .hero-hr {
   width: 50px;
   height: 4px;
@@ -216,6 +220,7 @@ header {
   background-color: var(--rapture-blue);
   border: none;
 }
+
 .hero-text {
   display: flex;
   align-self: flex-end;
@@ -228,6 +233,7 @@ header {
   font-weight: 600;
   font-style: normal;
 }
+
 .hero-bg {
   width: 200px;
   height: 200px;
@@ -235,10 +241,177 @@ header {
   z-index: -1;
   left: -265px;
 }
+
 .hero-bg-red {
   position: absolute;
   z-index: -1;
   bottom: 0;
   right: 0;
   transform: translateY(50%);
+}
+
+/* MAIN */
+.main-2-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--sacramento-state-green);
+}
+
+.main-2-1-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0 140px;
+  position: relative;
+}
+
+.main-hr {
+  width: 50px;
+  height: 4px;
+  margin: 140px 0 54px;
+  padding: 0;
+  border: none;
+  background-color: var(--light-coral);
+}
+
+.main-header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 445px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--white);
+}
+
+.main-list {
+  width: 100%;
+  max-width: 540px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-list-item {
+  display: flex;
+  margin: 0 0 32px;
+  padding: 0;
+}
+
+.main-list-img {
+  width: 72px;
+  height: 72px;
+  margin: 0 23px 0 0;
+  padding: 0;
+}
+
+.main-list-title {
+  margin: 0 0 16px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--light-coral);
+}
+
+.main-list-text {
+  margin: 0;
+  padding: 0;
+}
+
+.main-bg {
+  position: absolute;
+  width: 200px;
+  height: 244px;
+  right: -265px;
+  bottom: 0;
+}
+
+.main-2-2 {
+  margin: 0;
+  padding: 140px 0;
+}
+
+.main-2-2-in {
+  position: relative;
+}
+
+.main-2-2-header {
+  margin: 0 0 59px;
+  padding: 0;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.main-2-2-header-span {
+  color: var(--rapture-blue);
+}
+
+.main-directors-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.main-directors-list-item {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-directors-list-title {
+  margin: -20px 0 24px;
+  padding: 0;
+  text-align: center;
+}
+
+.directors-name {
+  margin: 0 0 2px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--rapture-blue);
+}
+
+.directors-speciality {
+  margin: 0 0 32px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.directors-img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--rapture-blue);
+}
+
+.directors-rect-img {
+  position: absolute;
+  top: -140px;
+  left: -147px;
+}
+
+.directors-circle-img {
+  position: absolute;
+  z-index: -1;
+  right: -170px;
+  bottom: -240px;
 }
