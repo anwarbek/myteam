@@ -404,14 +404,51 @@ header {
 }
 
 .directors-rect-img {
+  width: 147px;
+  height: 100px;
   position: absolute;
   top: -140px;
-  left: -147px;
+  left: -170px;
 }
 
 .directors-circle-img {
+  width: 200px;
+  height: 200px;
   position: absolute;
   z-index: -1;
   right: -170px;
   bottom: -240px;
+}
+
+/* CTA */
+.cta {
+  background-color: var(--light-coral);
+}
+
+.cta-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 76px 0;
+}
+
+.cta-title {
+  margin: 0 260px 0 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--sacramento-state-green);
+}
+
+.cta-bg {
+  width: 200px;
+  height: 244px;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: -166px;
 }
