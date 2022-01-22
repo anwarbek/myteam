@@ -332,6 +332,8 @@ header {
 }
 
 .main-2-2 {
+  z-index: -1;
+
   margin: 0;
   padding: 140px 0;
   background-color: var(--deep-jungle-green);
@@ -416,13 +418,14 @@ header {
   width: 200px;
   height: 200px;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   right: -170px;
   bottom: -240px;
 }
 
 /* CTA */
 .cta {
+  z-index: 2;
   background-color: var(--light-coral);
 }
 
@@ -457,7 +460,7 @@ header {
 /* FOOTER */
 .footer {
   padding: 48px 0;
-  z-index: 1;
+  z-index: 2;
   background-color: var(--dark-green);
 }
 
@@ -513,6 +516,10 @@ header {
   display: flex;
   width: 24px;
   height: 24px;
+}
+
+.social-site-list-item .social-img:hover path {
+  fill: var(--light-coral);
 }
 
 .twitter {
