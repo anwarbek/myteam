@@ -131,7 +131,7 @@ img {
 
 /* HEADER */
 header {
-  padding: 73px 0 129px;
+  padding: 73px 0 0;
   margin: 0;
 }
 
@@ -190,7 +190,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0 0 250px;
+  padding: 129px 0 250px;
 }
 
 .hero-header {
@@ -249,6 +249,34 @@ header {
   right: 0;
   transform: translateY(50%);
 }
+
+/* ABOUT-HERO */
+.site-about-hero {
+  padding: 120px 0;
+}
+
+.about-header {
+  font-size: 64px;
+}
+
+.about-hr {
+  background-color: var(--light-coral);
+}
+
+.about-text {
+  margin: 40px 0 0 0;
+  max-width: 730px;
+}
+
+.about-hero-circle {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  transform: translateX(265px);
+}
+
+
 
 /* MAIN */
 .main-2-1 {
