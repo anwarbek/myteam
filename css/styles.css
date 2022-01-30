@@ -54,6 +54,13 @@ html {
 *:focus {
   outline: 2px dashed var(--light-coral);
   outline-offset: 3px;
+  transition: 0s;
+}
+
+.button-dark:focus {
+  outline: 2px dashed var(--sacramento-state-green);
+  outline-offset: 3px;
+  transition: none;
 }
 
 body {
@@ -607,14 +614,6 @@ header {
   margin: 0 0 48px;
 }
 
-.card:hover .front{
-  transform: rotateY(180deg);
-}
-
-.card:hover .back {
-  transform: rotateY(360deg);
-}
-
 .front {
   padding: 32px 24px 56px;
 }
@@ -646,6 +645,14 @@ header {
   background-color: var(--dark-green);
 }
 
+.front-rotate {
+  transform: rotateY(180deg);
+}
+
+.back-rotate {
+  transform: rotateY(360deg);
+}
+
 .motto-of-directors {
   text-align: center;
   margin: 0 0 24px;
@@ -655,8 +662,18 @@ header {
   display: flex;
 }
 
+.social-site-link {
+  display: flex;
+  align-items: center;
+}
+
 .social-site-link:not(:last-child) {
   margin: 0 16px 0 0;
+}
+
+.card-social-img {
+  display: flex;
+  align-items: center;
 }
 
 .linkedin {
@@ -681,9 +698,10 @@ header {
   bottom: 0;
   transform: translateY(50%);
   cursor: pointer;
+  transition: 1s;
 }
 
-.directors-btn:hover {
+.directors-btn-hover {
   transform: translateY(50%) rotateZ(45deg);
   background-color: var(--rapture-blue);
 }
@@ -842,6 +860,7 @@ header {
 }
 
 .twitter {
+  display: flex;
   width: 24px;
   height: 20px;
 }
